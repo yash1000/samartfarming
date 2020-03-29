@@ -1,0 +1,34 @@
+
+
+				<form [formGroup]="profileForm"  (ngSubmit)="onSubmit($event)">
+					<span class="login100-form-title">
+						Member Login
+					</span>
+
+					
+						<input type="text" id="login"formControlName="date" [(ngModel)]="username" name="login" placeholder="date">
+
+				<br><br>
+				
+                        <input  id="password"formControlName="distance" placeholder="distance">
+                        <br><br>
+				
+                        <input  id="password"formControlName="humidity" placeholder="humidity">
+                        <br><br>
+				
+                        <input  id="password"formControlName="id" placeholder="id">
+                        <br><br>
+				
+                        <input  id="password"formControlName="soil" placeholder="soil">
+                        <br><br>
+				
+                        <input id="password"formControlName="temprature" placeholder="temprature">
+                        <br><br>
+				
+						<input  id="password"formControlName="time" placeholder="time"><br>
+                            <button class="btn btn-primary"  [disabled]=!profileForm.valid>
+                                Registration
+                            </button>
+                        
+    
+				</form>

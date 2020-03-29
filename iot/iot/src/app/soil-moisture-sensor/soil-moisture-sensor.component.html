@@ -1,0 +1,13 @@
+<!-- <img src="../../assets/images/Humidity-Sensors.jpg"> -->
+<table>
+    <tr>
+        <td>Soil Moisture</td>
+        <td>Time</td>
+        <td>Date</td>
+    </tr>
+    <tr *ngFor = 'let data of array'>
+        <td>{{data.soil}}</td>
+        <td>{{data.time}}</td>
+        <td>{{data.date}}</td>
+    </tr>
+</table>

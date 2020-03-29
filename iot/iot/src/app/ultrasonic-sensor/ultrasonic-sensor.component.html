@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <td>Ultra sonic</td>
+        <td>Time</td>
+        <td>Date</td>
+    </tr>
+    <tr *ngFor = 'let data of array'>
+        <td [ngClass]="data.distance <= 70 ? 'bordered': 'greyedOut'">{{data.distance}}</td>
+        <td [ngClass]="data.distance <= 70 ? 'bordered': 'greyedOut'">{{data.time}}</td>
+        <td [ngClass]="data.distance <= 70 ? 'bordered': 'greyedOut'">{{data.date}}</td>
+    </tr>
+</table>

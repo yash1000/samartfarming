@@ -1,0 +1,13 @@
+<!-- <img src="../../assets/images/Humidity-Sensors.jpg"> -->
+<table>
+    <tr>
+        <td>Temprature</td>
+        <td>Time</td>
+        <td>Date</td>
+    </tr>
+    <tr *ngFor = 'let data of array'>
+        <td  [ngClass]="(data.temprature >= 60) ? 'bordered': 'greyedOut'">{{data.temprature}}</td>
+        <td  [ngClass]="(data.temprature >= 60) ? 'bordered': 'greyedOut'">{{data.time}}</td>
+        <td  [ngClass]="(data.temprature >= 60) ? 'bordered': 'greyedOut'">{{data.date}}</td>
+    </tr>
+</table>
